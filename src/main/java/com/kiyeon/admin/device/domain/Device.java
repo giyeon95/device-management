@@ -1,7 +1,7 @@
 package com.kiyeon.admin.device.domain;
 
 import com.kiyeon.admin.device.BaseAuditingEntity;
-import com.kiyeon.admin.device.domain.enumerated.DevicePlatform;
+import com.kiyeon.admin.device.domain.enumerated.Platform;
 import com.kiyeon.admin.device.domain.enumerated.DeviceType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -25,7 +25,7 @@ public class Device extends BaseAuditingEntity {
     private long serialNo;
 
     @Enumerated(value = EnumType.STRING)
-    private DevicePlatform platform;
+    private Platform platform;
 
     @Enumerated(value = EnumType.STRING)
     private DeviceType type;

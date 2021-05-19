@@ -1,5 +1,5 @@
 package com.kiyeon.admin.device.domain.enumerated;
 
-public enum DevicePlatform {
+public enum Platform {
     ANDROID, IOS,
 }
