@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/device?autoReconnect=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: username
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        hbm2ddl.auto: update
